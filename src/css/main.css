@@ -26,14 +26,14 @@ Variables
   --clr-primary-9: #FCC5D1;
   --clr-primary-10: #FEECF0;
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(22, 61%, 16%);
-  --clr-grey-3: hsl(22 , 34%, 30%);
-  --clr-grey-4: hsl(35, 28%, 39%);
+  --clr-grey-1: #340912;
+  --clr-grey-3: #561022;
+  --clr-grey-4: #79162F;
   /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-5: #AC2043;
+  --clr-grey-8: #F0A8B8;
+  --clr-grey-9: #F6CBD4;
+  --clr-grey-10: #FCEEF1;
   --clr-green-dark: hsl(125, 67%, 35%);
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
