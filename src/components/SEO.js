@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const SEO = ({title, description}) => {
+const SEO = ({title, description,isBlog}) => {
   const {site} = useStaticQuery(query)
   const {author,siteDesc,image,siteUrl,siteTitle,twitterUsername} = site.siteMetadata
   return <Helmet htmlAttributes={{lang:"en"}} title={`${title} | ${siteTitle}`}>
@@ -18,6 +18,13 @@ const SEO = ({title, description}) => {
     <meta name="twitter:title" content={siteTitle}/>
     <meta name="twitter:description" content={siteDesc}/>
     <meta name="twitter:image" content={`${siteUrl}${image}`}/>
+    {/* OpenGraph tags */}
+    <meta property="og:url" content={siteUrl} />
+    {isBlog ? <meta property="og:type" content="article" /> : null}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="fb:app_id" content='' />
   </Helmet>
 }
 

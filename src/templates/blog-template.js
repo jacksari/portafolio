@@ -7,7 +7,7 @@ import SEO from "../components/SEO"
 const ComponentName = ({data}) => {
   const {content,title,desc} = data.blog
   return <Layout>
-    <SEO title={title} description={desc}/>
+    <SEO title={title} description={desc} isBlog/>
     <section className="blog-template">
       <div className="section-center">
         <article className="blog-content">
