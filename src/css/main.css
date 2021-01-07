@@ -14,21 +14,21 @@ Variables
 :root {
   /* dark shades of primary color*/
   /* --clr-primary-1: hsl(43, 86%, 17%); */
-  --clr-primary-1: hsl(184, 91%, 17%);
-  --clr-primary-2: hsl(185, 84%, 25%);
-  --clr-primary-3: hsl(185, 81%, 29%);
-  --clr-primary-4: hsl(184, 77%, 34%);
-  --clr-primary-5: #2caeba;
+  --clr-primary-1: #4E0414;
+  --clr-primary-2: #BF0D3A;
+  --clr-primary-3: #D20F3F;
+  --clr-primary-4: #EF1A4F;
+  --clr-primary-5: #F02E5E;
   /* lighter shades of primary color */
-  --clr-primary-6: hsl(185, 57%, 50%);
-  --clr-primary-7: hsl(184, 65%, 59%);
-  --clr-primary-8: hsl(184, 80%, 74%);
-  --clr-primary-9: hsl(185, 94%, 87%);
-  --clr-primary-10: hsl(186, 100%, 94%);
+  --clr-primary-6: #F2406D;
+  --clr-primary-7: #F3537B;
+  --clr-primary-8: #F4668A;
+  --clr-primary-9: #FCC5D1;
+  --clr-primary-10: #FEECF0;
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
+  --clr-grey-1: hsl(22, 61%, 16%);
+  --clr-grey-3: hsl(22 , 34%, 30%);
+  --clr-grey-4: hsl(35, 28%, 39%);
   /* grey used for paragraphs */
   --clr-grey-5: hsl(210, 22%, 49%);
   --clr-grey-8: hsl(210, 31%, 80%);
@@ -130,7 +130,7 @@ p {
 .btn {
   text-transform: uppercase;
   background: var(--clr-primary-5);
-  color: var(--clr-primary-9);
+  color: var(--clr-primary-10);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
@@ -142,10 +142,12 @@ p {
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
+
 }
 .btn:hover {
-  color: var(--clr-primary-1);
-  background: var(--clr-primary-8);
+  border: 2px solid var(--clr-primary-5);
+  color: var(--clr-primary-5);
+  background: var(--clr-primary-10);
 }
 .center-btn {
   display: block;
@@ -1040,7 +1042,19 @@ Blog Template
   border-radius: var(--radius);
 }
 .blog-template img {
-  width: 15rem;
+  max-width: 35rem;
   height: 15rem;
   margin: 3rem 0;
+}
+
+.logo-jack{
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: #222222;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px var(--clr-primary-1);
+}
+.logo-jack span{
+  color: var(--clr-primary-5);
 }
